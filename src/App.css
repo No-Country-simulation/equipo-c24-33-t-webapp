@@ -11,3 +11,20 @@ body{
   font-family: 'Roboto';
 }
 
+h1{
+  color: #292c31;
+}
+
+#welcomeToStocker{
+  color: #292c31;
+  font-size: 40px;
+  margin: 0%;
+}
+
+h2{
+  color: #292c31;
+}
+
+p{
+  color: #687285;
+}
