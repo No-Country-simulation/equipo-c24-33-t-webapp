@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { GitHub } from '@mui/icons-material';
+import LoginForm from './LoginForm';
 
 const Home = () => {
   return (
