@@ -1,136 +1,94 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-
-const pages = ['Products', 'Pricing', 'Blog'];
+import * as React from "react";
+import { AppBar, Box, Toolbar, Typography, Container, Button } from "@mui/material";
+import { Link } from "react-scroll";
+import AdbIcon from "@mui/icons-material/Adb";
 
 function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  
-
-  
-
   return (
-    <div style={{ backgroundColor: '#eef5fd' }}>
-      <AppBar position="static" sx={{ backgroundColor: '#eef5fd', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}> 
+    <div style={{ backgroundColor: "#eef5fd", borderRadius: "20px" }}>
+      <AppBar
+        position="static"
+        sx={{
+          backgroundColor: "#eef5fd",
+          boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+          borderRadius: "20px",
+        }}
+      >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color: '#4876ee' }} />
+            {/* Logo */}
+            <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1, color: "#4876ee" }} />
             <Typography
               variant="h6"
               noWrap
               component="a"
-              href="#app-bar-with-responsive-menu"
+              href="#"
               sx={{
                 mr: 2,
-                display: { xs: 'none', md: 'flex' },
-                fontFamily: 'monospace',
+                display: { xs: "none", md: "flex" },
+                fontFamily: "monospace",
                 fontWeight: 700,
-                letterSpacing: '.3rem',
-                color: '#4876ee', 
-                textDecoration: 'none',
+                letterSpacing: ".3rem",
+                color: "#4876ee",
+                textDecoration: "none",
               }}
             >
-              LOGO
+              STOCKER
             </Typography>
 
-            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                color="inherit"
-              >
-                <MenuIcon sx={{ color: '#4876ee' }} /> 
-              </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: 'bottom',
-                  horizontal: 'left',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'left',
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
-                sx={{ display: { xs: 'block', md: 'none' } }}
-              >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography sx={{ textAlign: 'center', color: '#333333' }}>{page}</Typography> 
-                  </MenuItem>
-                ))}
-              </Menu>
+            {/* Items de navegación */}
+            <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center" }}>
+              {["Inicio", "Funciones", "Beneficios", "Automatización", "Seguridad", "Contacto"].map(
+                (section) => (
+                  <Button
+                    key={section}
+                    component={Link}
+                    to={section.toLowerCase()} // ID de la sección
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    sx={{
+                      mx: 2,
+                      color: "#333333",
+                      fontWeight: 500,
+                      textTransform: "none",
+                      "&:hover": { color: "#4876ee" },
+                    }}
+                  >
+                    {section}
+                  </Button>
+                )
+              )}
             </Box>
-            <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, color: '#333333' }} />
-            <Typography
-              variant="h5"
-              noWrap
-              component="a"
-              href="#app-bar-with-responsive-menu"
-              sx={{
-                mr: 2,
-                display: { xs: 'flex', md: 'none' },
-                flexGrow: 1,
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.3rem',
-                color: '#333333', 
-                textDecoration: 'none',
-              }}
-            >
-              LOGO
-            </Typography>
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              {pages.map((page) => (
-                <Button
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: '#333333', display: 'block' }} 
-                >
-                  {page}
-                </Button>
-              ))}
-            </Box>
-            <Box sx={{ flexGrow: 0, display: 'flex', alignItems: 'center' }}>
-              
+
+            {/* Botones de autenticación */}
+            <Box sx={{ flexGrow: 0 }}>
               <Button
-                href="#login"
-                sx={{ my: 2, color: '#333333', display: 'block', backgroundColor: '#f1f7fd', margin: '15px'}}
+                  href="/register"
+                  sx={{
+                    color: "white",
+                    backgroundColor: "#2a313f",
+                    "&:hover": { backgroundColor: "#1e2532" },
+                    margin: '15px'
+                  }}
+                >
+                  Registrarse
+                </Button>
+
+              <Button
+                href="/login"
+                sx={{
+                  color: "#333333",
+                  backgroundColor: "#f1f7fd",
+                  marginRight: "15px",
+                  "&:hover": { backgroundColor: "#dbe9fa" },
+                }}
               >
                 Iniciar Sesión
               </Button>
 
-              <Button
-                href="#register"
-                sx={{ my: 2, color: 'white', display: 'block', backgroundColor: '#2a313f'}} 
-              >
-                Registrarse
-              </Button>
+              
             </Box>
           </Toolbar>
         </Container>
