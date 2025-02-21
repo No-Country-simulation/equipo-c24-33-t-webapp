@@ -1,11 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { GitHub } from '@mui/icons-material';
-import LoginForm from './LoginForm';
 
 const Home = () => {
   return (
-    <section id="home" style={{ padding: '100px 20px', textAlign: 'center' }}>
+    <section id="home" style={{ paddingTop: '100px', margin: '0', textAlign: 'center' }}>
       <h1 id='welcomeToStocker'>
         Bienvenido a <span style={{ color: '#4876ee' }}>Stocker</span>
       </h1>

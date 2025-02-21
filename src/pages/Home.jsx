@@ -4,20 +4,19 @@ import ResponsiveAppBar from '../components/ResponsiveAppBar';
 import Inicio from '../components/Home';
 import Features from '../components/Features';
 import Benefits from '../components/Benefits';
-import Automation from '../components/Automation';
-import Security from '../components/Security';
 import Contact from '../components/Contact';
 import '../assets/styles/Home.css';
+
 const Home = () => {
     return (
         <div>
             <ResponsiveAppBar />
-            <Inicio />
-            <Features />
-            <Benefits />
-            <Automation />
-            <Security />
-            <Contact />
+            <div style={{ margin: '0', padding: '0' }}>
+                <Inicio />
+                <Features />
+                <Benefits />
+                <Contact />
+            </div>
         </div>
     );
 };
