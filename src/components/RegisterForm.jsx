@@ -16,7 +16,7 @@ export default function RegisterForm({ onRegister }) {
         password: password,
         name: name,
       })
-      alert("Usuario registrado: ", register.data )
+      alert("Usuario registrado correctamente" )
       if (onRegister) onRegister(register.data); // Llama a la función `onRegister` si
     } catch (error) {
       console.log(error)
