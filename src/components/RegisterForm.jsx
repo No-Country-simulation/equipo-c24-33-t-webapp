@@ -1,16 +1,27 @@
 import React, { useState } from 'react';
 import { TextField, Button, Box, Typography, Container, FormControlLabel, Checkbox } from '@mui/material';
 import { Google as GoogleIcon } from '@mui/icons-material';
-
+import axios from 'axios'
 export default function RegisterForm({ onRegister }) {
+  
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [subscribe, setSubscribe] = useState(false);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (onRegister) onRegister({ name, email, password, subscribe });
+  const handleSubmit = async (e) => {
+    try {
+      e.preventDefault()
+      const register= await axios.post("https://stockerback.onrender.com/api/auth/register",
+        {email: email,
+        password: password,
+        name: name,
+      })
+      alert("Usuario registrado: ", register.data )
+      if (onRegister) onRegister(register.data); // Llama a la función `onRegister` si
+    } catch (error) {
+      console.log(error)
+    }
+   
   };
 
   return (
@@ -45,10 +56,7 @@ export default function RegisterForm({ onRegister }) {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <FormControlLabel
-            control={<Checkbox checked={subscribe} onChange={(e) => setSubscribe(e.target.checked)} />}
-            label="Quiero recibir notificaciones por email"
-          />
+          
           <Button type="submit" variant="contained" color="primary" fullWidth sx={{ mt: 2 }}>
             Registrarse
           </Button>
