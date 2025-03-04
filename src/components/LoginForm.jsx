@@ -2,14 +2,24 @@
 import React, { useState } from 'react';
 import { TextField, Button, Box, Typography, Container } from '@mui/material';
 import { Google as GoogleIcon } from '@mui/icons-material';
-
+import axios from 'axios';
 export default function LoginForm({ onLogin }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (onLogin) onLogin({ email, password });
+  const handleSubmit = async(e) => {
+    e.preventDefault();
+    try {
+      const login = await axios.post("https://stockerback.onrender.com/api/auth/login", {
+        email,
+        password
+      })
+      console.log(login.data)
+      alert("Usuario logueado correctamente" )
+      if (onLogin) onLogin({ email, password });
+    } catch (error) {
+      console.log(error)
+    }
   };
 
   return (
