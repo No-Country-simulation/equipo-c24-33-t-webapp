@@ -11,11 +11,11 @@ const Contact = () => {
       sx={{
         mt: 4,
         py: 4,
-          color: "#333",
+        color: "#333",
         textAlign: "center",
       }}
     >
-              <Divider sx={{ borderColor: "rgba(0, 0, 0, 0.2)", mb: 2 }} />
+      <Divider sx={{ borderColor: "rgba(0, 0, 0, 0.2)", mb: 2 }} />
 
       <Container>
         <Box sx={{ display: "flex", justifyContent: "center", mb: 2 }}>
@@ -48,7 +48,6 @@ const Contact = () => {
         <Typography variant="body2" sx={{ opacity: 0.8, mb: 2 }}>
           La mejor solución para gestionar tu negocio de manera eficiente.
         </Typography>
-
 
         {/* Social Media Links */}
         <Box sx={{ display: "flex", justifyContent: "center", gap: 2, mb: 2 }}>
