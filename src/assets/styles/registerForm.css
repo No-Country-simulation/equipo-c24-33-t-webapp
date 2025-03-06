@@ -1,0 +1,127 @@
+.register-container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .register-left {
+    flex: 1;
+    padding: 5rem;
+    background-color: #F5F6FF;
+    border-radius: 20px;
+    text-align: left;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+  
+  .register-left h1 {
+    color: #545A8C;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .register-left h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .register-left p {
+    color: #505F98;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .register-steps {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .register-step-box {
+    background-color: #B5CBF8;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .register-right {
+    border-radius: 20px;
+    background-color: #99A3FF;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .register-form {
+    background-color: #99A3FF;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .register-form h3 {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+  }
+  
+  .MuiOutlinedInput-root {
+    background-color: white !important;
+    border-radius: 20px !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -ms-border-radius: 20px !important;
+    -o-border-radius: 20px !important;
+}
+  
+  .MuiOutlinedInput-root fieldset {
+    border-color: #ccc !important;
+  }
+  
+  .MuiOutlinedInput-root:hover fieldset {
+    border-color: #5a5faa !important;
+  }
+  
+  .MuiOutlinedInput-root.Mui-focused fieldset {
+    border-color: #5a5faa !important;
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    .register-container {
+      flex-direction: column; 
+      height: auto; 
+    }
+  
+    .register-left {
+      padding: 2rem;
+      text-align: center;
+      flex: none;
+      width: 100%;
+    }
+  
+    .register-right {
+      padding: 1rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .register-form {
+      max-width: 100%;
+      width: 90%;
+    }
+  }
+  
