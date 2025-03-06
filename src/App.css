@@ -1,13 +1,11 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  
+  margin: 0 ;
+  padding: 0;
+  background-color: #B5CBF8;  
 }
 
 body{
-  background-color: #e2effd;
+  background-color: #DFF3F7;
   font-family: 'Roboto';
   margin: 0;
   padding: 0;
