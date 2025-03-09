@@ -1,75 +1,68 @@
-// eslint-disable-next-line no-unused-vars
-import * as React from "react";
-import { Container, Typography, Box, Divider, IconButton } from "@mui/material";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import AdbIcon from "@mui/icons-material/Adb";
+import React from "react";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import dashboard from "../assets/images/dashboard.png";
 
-const Contact = () => {
+export default function Contact() {
   return (
     <Box
-      component="footer"
       sx={{
-        mt: 4,
-        py: 4,
-        color: "#333",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        paddingTop: 10,
         textAlign: "center",
       }}
     >
-      <Divider sx={{ borderColor: "rgba(0, 0, 0, 0.2)", mb: 2 }} />
-
-      <Container>
-        <Box sx={{ display: "flex", justifyContent: "center", mb: 2 }}>
-          <AdbIcon
-            sx={{
-              display: { xs: "none", md: "flex" },
-              mr: 1,
-              color: "#4876ee",
-            }}
-          />
+      {/* Tarjeta con el texto */}
+      <Card
+        id="card_Stocker"
+        sx={{
+          minWidth: 275,
+          maxWidth: 750,
+          backgroundColor: "white",
+          color: "#6D74B5",
+          boxShadow: 0,
+          padding: 4,
+          display: "flex",
+          alignItems: "flex-start", // Asegura que los elementos inicien alineados arriba
+          justifyContent: "space-between",
+          gap: 3,
+        }}
+      >
+        <CardContent sx={{ flex: 1, textAlign: "left" }}>
+          {" "}
+          {/* Alinea el texto a la izquierda */}
           <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "#4876ee",
-              textDecoration: "none",
-            }}
+            variant="h5"
+            component="div"
+            sx={{ fontWeight: "bold", fontSize: 30 }}
           >
-            STOCKER
+            Gestión de stock en tiempo real
           </Typography>
-        </Box>
-
-        <Typography variant="body2" sx={{ opacity: 0.8, mb: 2 }}>
-          La mejor solución para gestionar tu negocio de manera eficiente.
-        </Typography>
-
-        {/* Social Media Links */}
-        <Box sx={{ display: "flex", justifyContent: "center", gap: 2, mb: 2 }}>
-          <IconButton
-            component="a"
-            href="https://github.com/No-Country-simulation/equipo-c24-33-t-webapp"
-            target="_blank"
-            rel="noopener noreferrer"
-            sx={{ color: "#black", "&:hover": { color: "#black" } }}
+          <Typography
+            variant="body2"
+            sx={{ color: "#6D74B5", paddingTop: 3, fontSize: 15 }}
           >
-            <GitHubIcon fontSize="large" />
-          </IconButton>
-        </Box>
+            Evita problemas de inventario con actualizaciones automáticas y
+            alertas de stock bajo.
+          </Typography>
+        </CardContent>
 
-        {/* Copyright */}
-        <Typography variant="body2" sx={{ opacity: 0.7 }}>
-          &copy; {new Date().getFullYear()} Stocker. Todos los derechos
-          reservados.
-        </Typography>
-      </Container>
+        {/* Imagen */}
+        <CardContent
+          sx={{ flex: 1, display: "flex", justifyContent: "center" }}
+        >
+          <img
+            src={dashboard}
+            alt="chico"
+            style={{ width: "100%", maxWidth: 300 }}
+          />
+        </CardContent>
+      </Card>
     </Box>
   );
-};
-
-export default Contact;
+}
