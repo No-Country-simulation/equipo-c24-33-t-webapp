@@ -1,54 +1,29 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { GitHub } from '@mui/icons-material';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
-const Home = () => {
+
+export default function Home() {
   return (
-    <section id="home" style={{ paddingTop: '100px', margin: '0', textAlign: 'center' }}>
-      <h1 id='welcomeToStocker'>
-        Bienvenido a <span style={{ color: '#4876ee' }}>Stocker</span>
-      </h1>
-      <p style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-        La forma más sencilla de gestionar tu negocio de forma eficiente, explore nuestro dashboard de vanguardia, que ofrece soluciones de alta calidad adaptadas a sus necesidades. Mejore su experiencia con funciones y servicios de primer nivel.
-      </p>
+    <Card id='card_Stocker' sx={{ minWidth: 275,  maxWidth: 500, backgroundColor: "#f5f6ff", boxShadow: 0, paddingTop: 20, paddingLeft: 20}}>
+      <CardContent>
+        <Typography variant="h5" component="div" sx={{fontWeight: "bold", fontSize: 35}}>
+        Organiza tu inventario de una forma sencilla
+        </Typography>
+        <Typography variant="body2" sx={{color: "#505F98", paddingTop: 3, fontSize: 15}}>
+        En Stocker podrás organizar el inventario de tu empresa, visualizar su estado en tiempo real y optimizar los procesos para una gestión más eficiente.          <br />
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small" sx={{marginLeft: 6,paddingX: 3, backgroundColor: "#97D9E4", color: "black", fontSize: 12}}>Iniciar Sesión</Button>
+        <Button size="small" sx={{paddingX: 3, backgroundColor: "#f5f6ff", outline: 1, color: "black", fontSize: 12}}>Más Información</Button>
 
-      {/* Input para el correo */}
-      <div style={{ marginTop: '20px' }}>
-        <input 
-          type="email" 
-          placeholder="Ingrese su correo" 
-          style={{
-            padding: '10px',
-            width: '250px',
-            borderRadius: '5px',
-            border: '1px solid #ccc',
-            backgroundColor: 'white'
-          }}
-        />
-        <button style={{ 
-          marginLeft: '10px',
-          padding: '10px 15px',
-          backgroundColor: '#4876ee',
-          color: '#fff',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer'
-        }}>
-          Suscribirse
-        </button>
-        <p style={{ fontSize: '12px', marginTop: '10px', color: '#666' }}>
-          Al hacer clic en el botón, aceptas nuestros <strong>Términos y Condiciones</strong>.
-        </p>
-      </div>
-
-      {/* Icono de GitHub */}
-      <div style={{ marginTop: '20px' }}>
-        <a href="https://github.com/No-Country-simulation/equipo-c24-33-t-webapp" target="_blank" rel="noopener noreferrer" style={{ color: '#333', textDecoration: 'none' }}>
-          <GitHub fontSize="large" />
-        </a>
-      </div>
-    </section>
+      </CardActions>
+    </Card>
   );
-};
-
-export default Home;
+}

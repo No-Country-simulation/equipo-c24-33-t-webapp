@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import ResponsiveAppBar from '../components/ResponsiveAppBar'; 
 import Inicio from '../components/Home';
 import Features from '../components/Features';
 // import Benefits from '../components/Benefits';
@@ -10,7 +9,6 @@ import '../assets/styles/Home.css';
 const Home = () => {
     return (
         <div>
-            <ResponsiveAppBar />
             <div style={{ margin: '0', padding: '0' }}>
                 <Inicio />
                 <Features />

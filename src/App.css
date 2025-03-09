@@ -1,7 +1,7 @@
 #root {
   margin: 0 ;
   padding: 0;
-  background-color: #B5CBF8;  
+  background-color: #f5f6ff;  
 }
 
 body{
@@ -11,13 +11,14 @@ body{
   padding: 0;
 }
 
+
 h1{
   color: #292c31;
 }
 
 #welcomeToStocker{
   color: #292c31;
-  font-size: 50px;
+  font-size: 40px;
   margin: 0%;
 }
 
