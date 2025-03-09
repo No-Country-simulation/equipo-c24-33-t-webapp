@@ -1,89 +1,66 @@
-// // eslint-disable-next-line no-unused-vars
-// import * as React from 'react';
-// import AccordionGroup from '@mui/joy/AccordionGroup';
-// import Accordion from '@mui/joy/Accordion';
-// // eslint-disable-next-line no-unused-vars
-// import AccordionDetails, {
-//   accordionDetailsClasses,
-// } from '@mui/joy/AccordionDetails';
-// import AccordionSummary, {
-//   accordionSummaryClasses,
-// } from '@mui/joy/AccordionSummary';
+import React from "react";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import girl from "../assets/images/girl.png";
 
-// import Typography from '@mui/joy/Typography';
-// import Avatar from '@mui/joy/Avatar';
-// import ListItemContent from '@mui/joy/ListItemContent';
+export default function Benefits() {
+  return (
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        paddingTop: 10,
+      }}
+    >
+      {/* Tarjeta con el texto */}
+      <Card
+        id="card_Stocker"
+        sx={{
+          minWidth: 275,
+          maxWidth: 750,
+          backgroundColor: "white",
+          color: "#6D74B5",
+          boxShadow: 0,
+          padding: 4,
+          display: "flex",
+          alignItems: "flex-start",
+          justifyContent: "space-between",
+          gap: 3,
+        }}
+      >
+        {/* Imagen */}
+        <CardContent
+          sx={{ flex: 1, display: "flex", justifyContent: "center" }}
+        >
+          <img
+            src={girl}
+            alt="chico"
+            style={{ width: "100%", maxWidth: 300 }}
+          />
+        </CardContent>
 
-// import TapAndPlayRoundedIcon from '@mui/icons-material/TapAndPlayRounded';
-// import EditNotificationsRoundedIcon from '@mui/icons-material/EditNotificationsRounded';
-// import AccessibilityNewRoundedIcon from '@mui/icons-material/AccessibilityNewRounded';
-
-// export default function Benefits() {
-//   return (
-//     <div
-//       style={{
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         textAlign: 'center',
-//       }}
-//     >
-//       <AccordionGroup
-//         variant="plain"
-//         transition="0.2s"
-//         sx={{
-//           maxWidth: 400,
-//           borderRadius: 'md',
-//           [`& .${accordionDetailsClasses.content}.${accordionDetailsClasses.expanded}`]: {
-//             paddingBlock: '1rem',
-//           },
-//           [`& .${accordionSummaryClasses.button}`]: {
-//             paddingBlock: '1rem',
-//           },
-//         }}
-//       >
-//         <Accordion>
-//           <AccordionSummary indicator={false}>
-//             <Avatar color="primary">
-//               <TapAndPlayRoundedIcon />
-//             </Avatar>
-//             <ListItemContent>
-//               <Typography level="title-md">Mantente Conectado</Typography>
-//               <Typography level="body-sm">
-//                 Tienes acceso a tu información desde cualquier dispositivo
-//               </Typography>
-//             </ListItemContent>
-//           </AccordionSummary>
-//         </Accordion>
-
-//         <Accordion>
-//           <AccordionSummary indicator={false}>
-//             <Avatar color="success">
-//               <EditNotificationsRoundedIcon />
-//             </Avatar>
-//             <ListItemContent>
-//               <Typography level="title-md">Notificaciones</Typography>
-//               <Typography level="body-sm">
-//                 Recibe notificaciones sobre tu inventario en tiempo real
-//               </Typography>
-//             </ListItemContent>
-//           </AccordionSummary>
-//         </Accordion>
-
-//         <Accordion>
-//           <AccordionSummary indicator={false}>
-//             <Avatar color="danger">
-//               <AccessibilityNewRoundedIcon />
-//             </Avatar>
-//             <ListItemContent>
-//               <Typography level="title-md">Accesibilidad</Typography>
-//               <Typography level="body-sm">
-//                 No tendrás ningún problema con las funcionalidades de la aplicación
-//               </Typography>
-//             </ListItemContent>
-//           </AccordionSummary>
-//         </Accordion>
-//       </AccordionGroup>
-//     </div>
-//   );
-// }
+        <CardContent sx={{ flex: 1, textAlign: "left" }}>
+          <Typography
+            variant="h5"
+            component="div"
+            sx={{ fontWeight: "bold", fontSize: 30 }}
+          >
+            Carga masiva de productos
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{ color: "#6D74B5", paddingTop: 3, fontSize: 15 }}
+          >
+            Agrega múltiples productos de una sola vez sin perder tiempo
+            subiéndolos uno por uno.
+          </Typography>
+        </CardContent>
+      </Card>
+    </Box>
+  );
+}
