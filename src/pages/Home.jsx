@@ -2,7 +2,7 @@
 import React from 'react';
 import Inicio from '../components/Home';
 import Features from '../components/Features';
-// import Benefits from '../components/Benefits';
+import Benefits from '../components/Benefits';
 import Contact from '../components/Contact';
 import '../assets/styles/Home.css';
 
@@ -12,7 +12,7 @@ const Home = () => {
             <div style={{ margin: '0', padding: '0' }}>
                 <Inicio />
                 <Features />
-                {/* <Benefits /> */}
+                <Benefits />
                 <Contact />
             </div>
         </div>

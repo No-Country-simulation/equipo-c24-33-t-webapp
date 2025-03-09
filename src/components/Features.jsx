@@ -1,23 +1,68 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react';
-import dashboardImage from '../assets/images/dashboard_image.png'; 
+import React from "react";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import guy from "../assets/images/guy.png";
 
-const Features = () => {
+export default function Features() {
   return (
-    <section id="features" style={{ padding: '50px 20px', margin: '0', textAlign: 'center' }}>      
-      {/* Image with caption */}
-      <div style={{ marginTop: '10px' }}>
-        <img 
-          src={dashboardImage} 
-          alt="Vista previa del dashboard" 
-          style={{ width: '100%', maxWidth: '800px', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }} 
-        />
-        <p style={{ fontSize: '16px', marginTop: '10px', color: '#666' }}>
-        Nuestra aplicación ofrece una interfaz fácil de usar, actualizaciones de stock en tiempo real y herramientas de automatización para simplificar la gestión empresarial.
-        </p>
-      </div>
-    </section>
-  );
-};
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        paddingTop: 10,
+        textAlign: "center",
+      }}
+    >
+      <Typography
+        sx={{ color: "#6D74B5", maxWidth: 650, paddingBottom: 3 }}
+        variant="h4"
+        gutterBottom
+      >
+        Con Stocker, administra tu empresa de forma simple, rápida y eficiente.
+      </Typography>
 
-export default Features;
+      {/* Tarjeta con el texto */}
+      <Card
+        id="card_Stocker"
+        sx={{
+          minWidth: 275,
+          maxWidth: 750,
+          backgroundColor: "white",
+          color: "#6D74B5",
+          boxShadow: 0,
+          padding: 4,
+          display: "flex",
+          alignItems: "flex-start", // Asegura que los elementos inicien alineados arriba
+          justifyContent: "space-between",
+          gap: 3,
+        }}
+      >
+        <CardContent sx={{ flex: 1, textAlign: "left" }}> {/* Alinea el texto a la izquierda */}
+          <Typography
+            variant="h5"
+            component="div"
+            sx={{ fontWeight: "bold", fontSize: 30 }}
+          >
+            Plataforma intuitiva y fácil de usar
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{ color: "#6D74B5", paddingTop: 3, fontSize: 15 }}
+          >
+            Pensada para emprendedores y pequeños negocios sin experiencia en
+            software de gestión.
+          </Typography>
+        </CardContent>
+
+        {/* Imagen */}
+        <CardContent sx={{ flex: 1, display: "flex", justifyContent: "center" }}>
+          <img src={guy} alt="chico" style={{ width: "100%", maxWidth: 300 }} />
+        </CardContent>
+      </Card>
+    </Box>
+  );
+}
