@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -7,8 +8,11 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 import illustration from "../assets/images/image.png"; 
-import Shape from "../assets/images/background-shape.png"
+import Shape from "../assets/images/background-shape.png";
+
 export default function Home() {
+  const navigate = useNavigate();
+
   return (
     <Box
       sx={{
@@ -22,7 +26,6 @@ export default function Home() {
         backgroundSize: "75%",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "right",
-
       }}
     >
       <Box sx={{ display: "flex", alignItems: "center", gap: 5 }}>
@@ -47,11 +50,11 @@ export default function Home() {
             </Typography>
             <Typography
               variant="body2"
-              sx={{ color: "#505F98", paddingTop: 3, fontSize: 15 }}
+              sx={{ paddingTop: 3, fontSize: 15, color: "#505F98" }}
             >
               En Stocker podrás organizar el inventario de tu empresa,
               visualizar su estado en tiempo real y optimizar los procesos para
-              una gestión más eficiente. <br />
+              una gestión más eficiente.
             </Typography>
           </CardContent>
           <CardActions>
@@ -64,6 +67,7 @@ export default function Home() {
                 color: "black",
                 fontSize: 12,
               }}
+              onClick={() => navigate("/login")}
             >
               Iniciar Sesión
             </Button>
@@ -76,8 +80,9 @@ export default function Home() {
                 color: "black",
                 fontSize: 12,
               }}
+              onClick={() => navigate("/register")}
             >
-              Más Información
+              Regístrarse
             </Button>
           </CardActions>
         </Card>
