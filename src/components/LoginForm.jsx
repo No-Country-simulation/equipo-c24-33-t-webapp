@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { TextField, Button, Box, Typography, Container } from '@mui/material';
 import { Google as GoogleIcon } from '@mui/icons-material';
 import axios from 'axios';
+import Swal from 'sweetalert2'
 import { useNavigate } from 'react-router-dom';
 export default function LoginForm({ onLogin }) {
   const [email, setEmail] = useState('');
@@ -17,11 +18,20 @@ const handleSubmit = async (e) => {
     });
 
     if (response.status === 200 && response.data.token) {
-      alert("Usuario logueado correctamente");
       if (onLogin) onLogin({ email, password });
+      Swal.fire({
+        icon: "success",
+        title: "Logueo Exitoso",
+        showConfirmButton: false,
+        timer: 1500
+      });
       navigate('/products')
     } else {
-      alert("Error: Credenciales inválidas.");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Credenciales inválidas"
+      });
     }
   } catch (error) {
     if (error.response && error.response.status === 401) {
