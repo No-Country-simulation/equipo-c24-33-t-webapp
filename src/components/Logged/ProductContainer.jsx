@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
@@ -14,6 +14,8 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 import "../../assets/styles/productPage.css";
+import { Link } from "react-router-dom";
+import Dayflow from "../../assets/images/Dayflow.png";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -55,82 +57,107 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 function ProductPage() {
+  const [products, setProducts] = useState([]);
+
+
+  useEffect(() => {
+    fetch("https://stockerback.onrender.com/api/products")
+      .then((response) => response.json())
+      .then((data) => setProducts(data)) 
+      .catch((error) => console.error("Error fetching products:", error));
+  }, []); 
+
   return (
     <div className="container">
       <Box my={4}>
-        <AppBar position="static" color="default">
-          <Toolbar>
-            <Search>
-              <SearchIconWrapper>
-                <i className="fas fa-search"></i>
-              </SearchIconWrapper>
-              <StyledInputBase
-                placeholder="Buscar"
-                inputProps={{ "aria-label": "search" }}
-              />
-            </Search>
-            <Box sx={{ flexGrow: 1 }} />
-            <Button color="inherit">Todos</Button>
-            <Button color="inherit">Productos</Button>
-            <Button color="inherit">Servicios</Button>
-            <Button color="inherit">Pack</Button>
-            <Button variant="contained" color="primary">
-              + Crear
-            </Button>
-          </Toolbar>
-        </AppBar>
-        <TableContainer component={Paper}>
-          <Table>
-            <TableHead>
-              <TableRow>
-                <TableCell>Producto</TableCell>
-                <TableCell>Estado</TableCell>
-                <TableCell>Marca</TableCell>
-                <TableCell>Tipo de producto</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              <TableRow>
-                <TableCell>
-                  <Box display="flex" alignItems="center">
-                    <input type="checkbox" />
-                    <Typography variant="body2" color="textSecondary" ml={2}>
-                      No hay productos agregados
-                    </Typography>
-                  </Box>
-                </TableCell>
-                <TableCell>
-                  <Typography variant="body2" color="textSecondary">
-                    Aquí se vería el estado
+  <AppBar position="static" color="default">
+    <Toolbar>
+      <Search>
+        <SearchIconWrapper>
+          <i className="fas fa-search"></i>
+        </SearchIconWrapper>
+        <StyledInputBase
+          placeholder="Buscar"
+          inputProps={{ "aria-label": "search" }}
+        />
+      </Search>
+      <Box sx={{ flexGrow: 1 }} />
+      <Button color="inherit">Todos</Button>
+      <Button color="inherit">Productos</Button>
+      <Button color="inherit">Servicios</Button>
+      <Button color="inherit">Pack</Button>
+      <Button
+        variant="contained"
+        color="primary"
+        component={Link}
+        to="/create-product"
+      >
+        + Crear
+      </Button>
+    </Toolbar>
+  </AppBar>
+
+  <TableContainer component={Paper}>
+    <Table>
+      <TableHead>
+        <TableRow>
+          <TableCell>Producto</TableCell>
+          <TableCell>Estado</TableCell>
+          <TableCell>Marca</TableCell>
+          <TableCell>Tipo de producto</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {products.length > 0 ? (
+          products.map((product) => (
+            <TableRow key={product.id}>
+              <TableCell>
+                <Box display="flex" alignItems="center">
+                  <input type="checkbox" />
+                  <Typography variant="body2" color="textSecondary" ml={2}>
+                    {product.name}
                   </Typography>
-                </TableCell>
-                <TableCell>
-                  <Typography variant="body2" color="textSecondary">
-                    Aquí se vería la marca
-                  </Typography>
-                </TableCell>
-                <TableCell>
-                  <Typography variant="body2" color="textSecondary">
-                    Aquí se vería el tipo de producto
-                  </Typography>
-                </TableCell>
-              </TableRow>
-            </TableBody>
-          </Table>
-        </TableContainer>
-        <Box display="flex" flexDirection="column" alignItems="center" py={10}>
-          <img
-            src="https://placehold.co/200x200"
-            alt="Illustration of a person sitting with a laptop"
-            width="200"
-            height="200"
-          />
-          <Typography variant="body1" color="textSecondary" align="center">
-            No tienes productos registrados. Ve a la opción "Crear" y en
-            "Productos" agrega un nuevo producto.
-          </Typography>
-        </Box>
-      </Box>
+                </Box>
+              </TableCell>
+              <TableCell>
+                <Typography variant="body2" color="textSecondary">
+                  {product.status || "Estado desconocido"}
+                </Typography>
+              </TableCell>
+              <TableCell>
+                <Typography variant="body2" color="textSecondary">
+                  {product.brand || "Marca desconocida"}
+                </Typography>
+              </TableCell>
+              <TableCell>
+                <Typography variant="body2" color="textSecondary">
+                  {product.category?.name || "Categoría desconocida"}
+                </Typography>
+              </TableCell>
+            </TableRow>
+          ))
+        ) : (
+          <TableRow>
+            <TableCell colSpan={4}>
+              <Box display="flex" flexDirection="column" alignItems="center" py={10}>
+                <img
+                  src={Dayflow}
+                  alt="Illustration of a person sitting with a laptop"
+                  width="200"
+                  height="200"
+                />
+                <Typography variant="body1" color="textSecondary" align="center">
+                  No tienes productos registrados. Ve a la opción "Crear" y en
+                  "Productos" agrega un nuevo producto.
+                </Typography>
+              </Box>
+            </TableCell>
+          </TableRow>
+        )}
+      </TableBody>
+    </Table>
+  </TableContainer>
+</Box>
     </div>
   );
 }
