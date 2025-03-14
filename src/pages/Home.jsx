@@ -4,6 +4,7 @@ import Inicio from '../components/Home';
 import Features from '../components/Features';
 import Benefits from '../components/Benefits';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 import '../assets/styles/Home.css';
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
                 <Features />
                 <Benefits />
                 <Contact />
+                <Footer />
             </div>
         </div>
     );
