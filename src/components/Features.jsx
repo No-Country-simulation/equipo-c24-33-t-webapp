@@ -18,7 +18,7 @@ export default function Features() {
       }}
     >
       <Typography
-        sx={{ color: "#6D74B5", maxWidth: 650, paddingBottom: 3 }}
+        sx={{ color: "#091133", maxWidth: 650, paddingBottom: 3 }}
         variant="h4"
         gutterBottom
       >
