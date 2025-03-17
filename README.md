@@ -2,6 +2,8 @@
 
 ## Proyecto: Stocker
 
+![Frame (2)](https://github.com/user-attachments/assets/bbe29cae-3f02-47c8-a6f8-cddc50d6b1ca)
+
 ### Miembros del equipo
 
 #### Roles UX/UI:
@@ -33,6 +35,8 @@ Participé en la investigación UX, identificando insights clave para mejorar la
 Stocker es una web/app diseñada para pequeños comerciantes, facilitando la gestión de operaciones diarias. Su valor radica en la simplicidad y accesibilidad, permitiendo la actualización de inventario en tiempo real, carga masiva de productos, reportes inteligentes y una interfaz intuitiva para mejorar la organización y la toma de decisiones de venta.  
 
 Los pequeños negocios (tiendas de barrio, puestos de mercado, microempresas, etc.) son clave en la economía, pero a menudo carecen de herramientas digitales para optimizar su funcionamiento. **Stocker busca cerrar esta brecha.**  
+
+![readme1](https://github.com/user-attachments/assets/dcff7050-b301-4571-8db2-1a4e75d54fa9)
 
 ---
 
