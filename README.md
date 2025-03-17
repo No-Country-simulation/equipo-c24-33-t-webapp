@@ -6,7 +6,7 @@ Miembros del equipo
 
 Roles UX/UI:
 
-*Andrés Stoehrel, Diseñador UX/UI:*  
+<b>Andrés Stoehrel, Diseñador UX/UI<b/>  
 Me desempeñé en la parte de diseño UI, participando en la ideación y prototipado junto a mis compañeros. Me enfoqué en la creación de componentes interactivos y la interactividad del producto. También trabajé en research, investigando referencias de la competencia y definiendo los objetivos de usuario en el Customer Journey.
 
 **### David García, Diseñador UX/UI:**  
