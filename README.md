@@ -17,7 +17,9 @@ Roles UX/UI:
 
  Links:
  Link Figma (Interfaz, diseño): https://www.figma.com/design/cZScFsdNzmMMOmYcmjun0P/UI-Kit-Stocker?node-id=2009-2&t=tDPqoba3sgnEavCx-1
+ 
  Link Fig Jam (Research): https://www.figma.com/board/R0WOzdtFmkbdxdmJqkUDKR/Proyecto--App-de-Gestion-de-Peque%C3%B1as-Empresas?node-id=0-1&p=f&t=QAAxOd05cC20Hjrv-0
+ 
  Link Presentación (Demo day): https://www.figma.com/slides/L3afleFWn7NbYGud3ytSC4/Product-Review?node-id=1-1086&t=IyTNlsw9IxMwONzx-0
 
 Roles Front End:
