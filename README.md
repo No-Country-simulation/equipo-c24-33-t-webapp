@@ -16,6 +16,7 @@ Roles UX/UI:
 - Hernán Maiorana, Diseñador UX/UI
 
  Links:
+ 
  Link Figma (Interfaz, diseño): https://www.figma.com/design/cZScFsdNzmMMOmYcmjun0P/UI-Kit-Stocker?node-id=2009-2&t=tDPqoba3sgnEavCx-1
  
  Link Fig Jam (Research): https://www.figma.com/board/R0WOzdtFmkbdxdmJqkUDKR/Proyecto--App-de-Gestion-de-Peque%C3%B1as-Empresas?node-id=0-1&p=f&t=QAAxOd05cC20Hjrv-0
