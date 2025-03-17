@@ -15,7 +15,7 @@ Roles UX/UI:
 - David García, Diseñador UX/UI
 - Hernán Maiorana, Diseñador UX/UI
 
- Links:
+ Links de trabajo realizado roles UX/UI:
  
  Link Figma (Interfaz, diseño): https://www.figma.com/design/cZScFsdNzmMMOmYcmjun0P/UI-Kit-Stocker?node-id=2009-2&t=tDPqoba3sgnEavCx-1
  
