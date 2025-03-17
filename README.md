@@ -6,13 +6,13 @@ Miembros del equipo
 
 Roles UX/UI:
 
-<b>Andrés Stoehrel, Diseñador UX/UI<b/>  
+**Andrés Stoehrel, Diseñador UX/UI**
 Me desempeñé en la parte de diseño UI, participando en la ideación y prototipado junto a mis compañeros. Me enfoqué en la creación de componentes interactivos y la interactividad del producto. También trabajé en research, investigando referencias de la competencia y definiendo los objetivos de usuario en el Customer Journey.
 
-**### David García, Diseñador UX/UI:**  
+**David García, Diseñador UX/UI:** 
 Participé en la investigación UX, identificando insights clave para mejorar la experiencia del usuario. En la parte de UI, planifiqué el diseño de la interfaz y trabajé en las funcionalidades de agregar, eliminar y leer un producto. También desarrollé componentes en Figma, siguiendo la documentación y buenas prácticas, asegurando su integración en las diferentes pantallas.
 
-**### Hernán Maiorana, Diseñador UX/UI**  
+**Hernán Maiorana, Diseñador UX/UI**  
 
 #### Links de trabajo UX/UI:
 🔗 [Figma (Interfaz, diseño)](https://www.figma.com/design/cZScFsdNzmMMOmYcmjun0P/UI-Kit-Stocker?node-id=2009-2&t=tDPqoba3sgnEavCx-1)  
