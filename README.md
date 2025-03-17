@@ -1,4 +1,29 @@
-# equipo-c24-33-t-webapp<br><br>Proyecto: Stocker<br><br>Miembros del equipo:<br><br>Roles UX/UI:<br><br>- Andres Stoehrel, Diseñador UX/UI:<br> Me desempeñé en la parte de diseño UI del producto, participando en la ideación y diseño de la interfaz junto a mis compañeros de rol,<br> poniendo énfasis en el prototipado, creación de componentes interactivos y encargándome de la interactividad del producto. También me<br> desempeñé en la parte de research, investigando referencias de la competencia y creando los objetivos de usuario asocido al customer Journey.<br> (Links al Figma y Fig Jam más abajo).<br><br>- David García, Diseñador UX/UI:<br>Me desempeñé como diseñador UX/UI y participé en la investigación junto con mis compañeros, donde identificamos datos e insights clave sobre el proyecto y cómo mejorar la experiencia de los usuarios.<br>En el apartado de UI, planificamos el diseño de la interfaz, y mi participación se centró principalmente en el desarrollo de las funcionalidades para agregar, eliminar y leer un producto.desarrollando diversos componentes en Figma, siguiendo la documentación y las buenas prácticas establecidas.<br><br>- Hernán Maiorana, Diseñador UX/UI<br><br> Links de trabajo realizado roles UX/UI:<br> <br> Link Figma (Interfaz, diseño): https://www.figma.com/design/cZScFsdNzmMMOmYcmjun0P/UI-Kit-Stocker?node-id=2009-2&t=tDPqoba3sgnEavCx-1<br> <br> Link Fig Jam (Research): https://www.figma.com/board/R0WOzdtFmkbdxdmJqkUDKR/Proyecto--App-de-Gestion-de-Peque%C3%B1as-Empresas?node-id=0-1&p=f&t=QAAxOd05cC20Hjrv-0<br> <br> Link Presentación (Demo day): https://www.figma.com/slides/L3afleFWn7NbYGud3ytSC4/Product-Review?node-id=1-1086&t=IyTNlsw9IxMwONzx-0<br><br>Roles Front End:<br>- Jabes Reyes, Desarrollador Front End<br>- Jocelyn Araya, Desarrolladora Front End<br><br>Rol Backend:<br>- Gabriel Trujillo, Desarrollador Backend<br><br><br>Stocker es una web/app diseñada específicamente para pequeños comerciantes, permitiéndoles gestionar <br>sus operaciones diarias de manera más eficiente. El valor de Stocker se centra en la simplicidad y la <br>accesibilidad, permitiendo a los pequeños negocios una transición digital a través de actualización de <br>inventario en tiempo real, carga masiva de productos,reportes inteligentes y una interfaz intuitiva que <br>permiten mantener el orden y tomar mejores decisiones de ventas. <br><br>Una App de Gestión de Pequeños Negocios es una idea con mucho potencial, donde los<br>pequeños comercios (tiendas de barrio, puestos de mercado, microempresas, etc.) son<br>una parte fundamental de la economía, pero a menudo carecen de herramientas digitales<br>para optimizar sus operaciones.<br><br><br>
+equipo-c24-33-t-webapp
+Proyecto: Stocker
+Miembros del equipo:
+Roles UX/UI:
+Andrés Stoehrel, Diseñador UX/UI:
+Me desempeñé en la parte de diseño UI, participando en la ideación y prototipado junto a mis compañeros. Me enfoqué en la creación de componentes interactivos y la interactividad del producto. También trabajé en research, investigando referencias de la competencia y definiendo los objetivos de usuario en el Customer Journey.
+
+David García, Diseñador UX/UI:
+Participé en la investigación UX, identificando insights clave para mejorar la experiencia del usuario. En la parte de UI, planifiqué el diseño de la interfaz y trabajé en las funcionalidades de agregar, eliminar y leer un producto. También desarrollé componentes en Figma, siguiendo la documentación y buenas prácticas, asegurando su integración en las diferentes pantallas.
+
+Hernán Maiorana, Diseñador UX/UI
+
+Links de trabajo UX/UI:
+🔗 Figma (Interfaz, diseño)
+🔗 FigJam (Research)
+🔗 Presentación (Demo Day)
+
+Roles Front End:
+Jabes Reyes, Desarrollador Front End
+Jocelyn Araya, Desarrolladora Front End
+Rol Backend:
+Gabriel Trujillo, Desarrollador Backend
+📌 Sobre Stocker
+Stocker es una web/app diseñada para pequeños comerciantes, facilitando la gestión de operaciones diarias. Su valor radica en la simplicidad y accesibilidad, permitiendo la actualización de inventario en tiempo real, carga masiva de productos, reportes inteligentes y una interfaz intuitiva para mejorar la organización y la toma de decisiones de venta.
+
+Los pequeños negocios (tiendas de barrio, puestos de mercado, microempresas, etc.) son clave en la economía, pero a menudo carecen de herramientas digitales para optimizar su funcionamiento. Stocker busca cerrar esta brecha.
 
 
 # 💻 Tech Stack:
@@ -8,4 +33,4 @@
 ---
 [![](https://visitcount.itsvg.in/api?id=Stocker&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+
