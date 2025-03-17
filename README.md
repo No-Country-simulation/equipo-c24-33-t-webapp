@@ -1,10 +1,10 @@
-equipo-c24-33-t-webapp
+# equipo-c24-33-t-webapp
 
-Proyecto: Stocker
+## Proyecto: Stocker
 
-Miembros del equipo
+### Miembros del equipo
 
-Roles UX/UI:
+#### Roles UX/UI:
 
 **Andrés Stoehrel, Diseñador UX/UI**
 Me desempeñé en la parte de diseño UI, participando en la ideación y prototipado junto a mis compañeros. Me enfoqué en la creación de componentes interactivos y la interactividad del producto. También trabajé en research, investigando referencias de la competencia y definiendo los objetivos de usuario en el Customer Journey.
