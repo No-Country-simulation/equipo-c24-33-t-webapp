@@ -12,7 +12,10 @@ Roles UX/UI:
  desempeñé en la parte de research, investigando referencias de la competencia y creando los objetivos de usuario asocido al customer Journey.
  (Links al Figma y Fig Jam más abajo).
 
-- David García, Diseñador UX/UI
+- David García, Diseñador UX/UI:
+Me desempeñé como diseñador UX/UI y participé en la investigación junto con mis compañeros, donde identificamos datos e insights clave sobre el proyecto y cómo mejorar la experiencia de los usuarios.
+En el apartado de UI, planificamos el diseño de la interfaz, y mi participación se centró principalmente en el desarrollo de las funcionalidades para agregar, eliminar y leer un producto.desarrollando diversos componentes en Figma, siguiendo la documentación y las buenas prácticas establecidas.
+
 - Hernán Maiorana, Diseñador UX/UI
 
  Links de trabajo realizado roles UX/UI:
