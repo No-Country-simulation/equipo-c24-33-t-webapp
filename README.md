@@ -36,7 +36,8 @@ Stocker es una web/app diseñada para pequeños comerciantes, facilitando la ges
 
 Los pequeños negocios (tiendas de barrio, puestos de mercado, microempresas, etc.) son clave en la economía, pero a menudo carecen de herramientas digitales para optimizar su funcionamiento. **Stocker busca cerrar esta brecha.**  
 
-![readme1](https://github.com/user-attachments/assets/dcff7050-b301-4571-8db2-1a4e75d54fa9)
+![Group 18](https://github.com/user-attachments/assets/d86c0cf4-3c33-47e0-8a76-1b0d9e3dcc35)
+
 
 ---
 
