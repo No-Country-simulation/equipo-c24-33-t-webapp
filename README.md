@@ -19,6 +19,9 @@ Participé en la investigación UX, identificando insights clave para mejorar la
 
 
 **Hernán Maiorana, Diseñador UX/UI**  
+En la parte UX, me encargué de recopilar y analizar reseñas negativas de aplicaciones similares, para que junto a mis compañeros identificaramos los principales puntos de dolor de los usuarios. Además, contribuí a la creación de user personas, para definir mejor a nuestro público objetivo y sus necesidades . En la parte UI, trabajé en la adaptación de la interfaz para distintos dispositivos, asegurando que la experiencia de usuario fuera óptima tanto en móviles como lo es en escritorio
+
+LinkedIn: https://www.linkedin.com/in/hernan-maiorana-a18247267/
 
 #### Links de trabajo UX/UI:
 🔗 [Figma (Interfaz, diseño)](https://www.figma.com/design/cZScFsdNzmMMOmYcmjun0P/UI-Kit-Stocker?node-id=2009-2&t=tDPqoba3sgnEavCx-1)  
